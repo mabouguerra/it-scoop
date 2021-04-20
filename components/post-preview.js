@@ -18,7 +18,7 @@ export default function PostPreview({
       </div>
       <div>
         <DateFormatter dateString={date} />
-        <h2 className="mt-2 text-xl font-bold leading-tight text-gray-900 sm:text-2xl lg:text-3xl ">
+        <h2 className="mt-2 text-xl font-bold leading-tight text-gray-900 hover:text-gray-800 sm:text-2xl lg:text-3xl ">
           <Link href={url}>
             <a>{title}</a>
           </Link>
@@ -30,7 +30,7 @@ export default function PostPreview({
           {excerpt} <span>...</span>
         </p>
         <Link href={url}>
-          <a className="block mt-2 text-base font-bold text-red-900 sm:text-lg">
+          <a className="block mt-2 text-base font-bold text-red-600 hover:text-red-500 sm:text-lg">
             طالع المزيد ←
           </a>
         </Link>
