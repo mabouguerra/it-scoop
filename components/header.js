@@ -9,9 +9,9 @@ export default function Header() {
   useEffect(() => setMounted(true), []);
 
   return (
-    <header className="sticky top-0 z-30 h-16 bg-opacity-50 xl:px-8 backdrop-filter backdrop-blur">
+    <header className="sticky top-0 z-30 h-16 bg-white bg-opacity-50 dark:bg-opacity-50 firefox:bg-opacity-90 dark:firefox:bg-opacity-90 dark:bg-gray-900 xl:px-8 backdrop-filter backdrop-blur">
       {mounted && (
-        <div className="flex items-center justify-between max-w-6xl px-4 py-3 mx-auto my-0.5 border-b border-gray-200 dark:border-gray-800 xl:px-0 lg:px-8 sm:px-6 ">
+        <div className="flex items-center justify-between max-w-6xl px-4 py-3 mx-auto border-b border-gray-200 dark:border-gray-800 xl:px-0 lg:px-8 sm:px-6 ">
           <Link href="/">
             <a className="focus:outline-none">
               {theme === "dark" ? (
@@ -24,7 +24,7 @@ export default function Header() {
           <button
             aria-label="Toggle Dark Mode"
             type="button"
-            className="p-2 bg-gray-200 rounded-md focus:ring-2 ring-gray-900 dark:ring-gray-200 dark:bg-gray-800 hover:bg-gray-300 focus:outline-none"
+            className="p-2 bg-gray-200 rounded-md dark:hover:bg-gray-700 focus:ring-2 ring-gray-900 dark:ring-gray-200 dark:bg-gray-800 hover:bg-gray-300 focus:outline-none"
             onClick={() => {
               theme === "dark" ? setTheme("light") : setTheme("dark");
             }}
@@ -32,10 +32,9 @@ export default function Header() {
             {theme === "dark" ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5"
+                className="w-5 h-5 text-gray-100 stroke-current"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
               >
                 <path
                   strokeLinecap="round"
@@ -47,9 +46,8 @@ export default function Header() {
             ) : (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5"
+                className="w-5 h-5 text-gray-900 stroke-current"
                 viewBox="0 0 20 20"
-                fill="currentColor"
               >
                 <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
               </svg>

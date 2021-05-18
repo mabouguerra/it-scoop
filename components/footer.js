@@ -21,7 +21,7 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <div className="text-xs font-medium text-left text-gray-500 dark:text-gray-400 sm:text-sm ">
+          <div className="text-xs font-medium text-left text-gray-500 hover:text-gray-400 dark:hover:text-gray-300 dark:text-gray-400 sm:text-sm ">
             <Link href="/about">
               <a>عن المجلة التقنية</a>
             </Link>

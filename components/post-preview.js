@@ -18,7 +18,7 @@ export default function PostPreview({
       </div>
       <div>
         <DateFormatter dateString={date} />
-        <h2 className="mt-2 text-xl font-bold leading-tight text-gray-900 dark:text-gray-100 dark:hover:text-gray-300 hover:text-gray-800 sm:text-2xl lg:text-3xl ">
+        <h2 className="mt-2 text-xl font-bold leading-tight text-gray-900 dark:text-gray-100 dark:hover:text-gray-300 hover:text-gray-700 sm:text-2xl lg:text-3xl ">
           <Link href={url}>
             <a>{title}</a>
           </Link>
