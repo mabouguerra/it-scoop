@@ -8,7 +8,7 @@ export default function CoverImage({ src, title, url }) {
       alt={`صورة الغلاف لمقال ${title}`}
       layout="fill"
       objectFit="contain"
-      objectPosition="left"
+      objectPosition="right"
       className="shadow-lg "
     />
   );

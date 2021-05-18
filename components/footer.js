@@ -5,8 +5,8 @@ export default function Footer() {
   return (
     <footer className="absolute inset-x-0 bottom-0">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-6xl">
-        <div className="grid items-center grid-cols-2 py-4 mt-12 border-t lg:grid-cols-3 lg:mt-20 ">
-          <div className="text-xs text-gray-500 lg:col-span-2 sm:text-xs ">
+        <div className="grid items-center grid-cols-2 py-4 mt-12 border-t border-gray-200 dark:border-gray-800 lg:grid-cols-3 lg:mt-20 ">
+          <div className="text-xs text-gray-500 dark:text-gray-400 lg:col-span-2 sm:text-xs ">
             <div className="">
               <span className="inline">
                 محتوى الموقع منشور تحت رخصة المشاع الإبداعي
@@ -21,7 +21,7 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <div className="text-xs font-medium text-left text-gray-500 sm:text-sm ">
+          <div className="text-xs font-medium text-left text-gray-500 dark:text-gray-400 sm:text-sm ">
             <Link href="/about">
               <a>عن المجلة التقنية</a>
             </Link>

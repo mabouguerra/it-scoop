@@ -6,7 +6,7 @@ export default function DateFormatter({ dateString }) {
   return (
     <time
       dateTime={dateString}
-      className="text-xs font-medium text-gray-500 sm:text-sm"
+      className="text-xs font-medium text-gray-500 dark:text-gray-400 sm:text-sm"
     >
       {format(date, "dd MMMM yyyy", { locale: ar })}
     </time>

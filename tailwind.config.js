@@ -12,7 +12,7 @@ const em = (px, base) => `${round(px / base)}em`;
 module.exports = {
   mode: "jit",
   purge: ["./pages/**/*.js", "./components/**/*.js"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     fontFamily: {
       sans: ["Dubai", "sans-serif"],
@@ -130,6 +130,45 @@ module.exports = {
             },
             "tbody td:first-child": {
               paddingRight: "0",
+            },
+          },
+        },
+        dark: {
+          css: {
+            color: colors.gray[300],
+            a: {
+              color: colors.red[400],
+              "&:hover": {
+                color: colors.red[600],
+              },
+              code: { color: colors.red[400] },
+            },
+            blockquote: {
+              borderLeftColor: colors.gray[700],
+              color: colors.gray[300],
+            },
+            "h2,h3,h4": {
+              color: colors.gray[100],
+            },
+            hr: { borderColor: colors.gray[700] },
+            ol: {
+              li: {
+                "&:before": { color: colors.gray[500] },
+              },
+            },
+            ul: {
+              li: {
+                "&:before": { backgroundColor: colors.gray[500] },
+              },
+            },
+            strong: { color: colors.gray[300] },
+            thead: {
+              color: colors.gray[100],
+            },
+            tbody: {
+              tr: {
+                borderBottomColor: colors.gray[700],
+              },
             },
           },
         },
