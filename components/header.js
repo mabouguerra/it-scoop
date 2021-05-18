@@ -9,9 +9,9 @@ export default function Header() {
   useEffect(() => setMounted(true), []);
 
   return (
-    <header className="sticky top-0 z-30 bg-opacity-50 xl:px-8 backdrop-filter backdrop-blur">
+    <header className="sticky top-0 z-30 h-16 bg-opacity-50 xl:px-8 backdrop-filter backdrop-blur">
       {mounted && (
-        <div className="flex items-center justify-between max-w-6xl px-4 py-3 mx-auto border-b border-gray-200 dark:border-gray-800 lg:my-1 xl:px-0 lg:px-8 sm:px-6 ">
+        <div className="flex items-center justify-between max-w-6xl px-4 py-3 mx-auto my-0.5 border-b border-gray-200 dark:border-gray-800 xl:px-0 lg:px-8 sm:px-6 ">
           <Link href="/">
             <a className="focus:outline-none">
               {theme === "dark" ? (
