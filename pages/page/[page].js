@@ -23,7 +23,7 @@ export default function Home({ posts, currentPage, pageCount }) {
 }
 
 export async function getStaticProps({ params }) {
-  const posts = getPostsByPage(Number(params.page), [
+  const posts = await getPostsByPage(Number(params.page), [
     "title",
     "pid",
     "author",

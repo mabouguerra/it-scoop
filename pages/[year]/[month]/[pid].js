@@ -29,7 +29,7 @@ export default function Post({ post }) {
 }
 
 export async function getStaticProps({ params }) {
-  const post = getPostByPath(params, [
+  const post = await getPostByPath(params, [
     "title",
     "pid",
     "author",
@@ -37,14 +37,10 @@ export async function getStaticProps({ params }) {
     "coverImage",
     "content",
   ]);
-  const content = await markdownToHtml(post.content || "");
 
   return {
     props: {
-      post: {
-        ...post,
-        content,
-      },
+      post,
     },
   };
 }

@@ -26,9 +26,10 @@ export default function PostPreview({
         <div className="mt-2 lg:mt-4">
           <Avatar author={author} />
         </div>
-        <p className="mt-6 text-sm font-medium text-gray-700 dark:text-gray-300 sm:text-base lg:mt-8 line-clamp-3 sm:line-clamp-none">
-          {excerpt} <span>...</span>
-        </p>
+        <div
+          className="mt-6 text-sm font-medium text-gray-700 dark:text-gray-300 sm:text-base lg:mt-8 line-clamp-3 sm:line-clamp-none"
+          dangerouslySetInnerHTML={{ __html: excerpt }}
+        ></div>
         <Link href={url}>
           <a className="inline-block mt-4 text-base font-bold text-red-600 lg:mt-6 dark:text-red-400 dark:hover:text-red-600 hover:text-red-500 sm:text-lg">
             طالع المزيد ←
