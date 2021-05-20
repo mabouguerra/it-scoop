@@ -11,7 +11,7 @@ export default function Comments({ pid, url, title }) {
     language: "ar_DZ",
   };
   return (
-    <div className="mt-24 border-t border-gray-100 dark:border-gray-800 sm:pb-36 pb-28 lg:pb-40">
+    <div className="mt-24 ">
       <button
         className="mb-6 text-lg font-bold text-gray-800 focus:outline-none dark:text-gray-200 lg:text-2xl lg:py-6"
         onClick={() => {

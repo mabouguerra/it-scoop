@@ -14,15 +14,28 @@ export default function Header() {
         <div className="flex items-center justify-between max-w-6xl px-4 py-3 mx-auto border-b border-gray-200 dark:border-gray-800 xl:px-0 lg:px-8 sm:px-6 ">
           <Link href="/">
             <a className="focus:outline-none">
+              <span className="sr-only">صفحة البداية</span>
               {theme === "dark" ? (
-                <img className="h-8 lg:h-10" src="/logo-white.png" />
+                <img
+                  className="w-auto h-8 lg:h-10"
+                  src="/logo-white.png"
+                  width="382"
+                  height="103"
+                  alt="شعار المجلة التقنية"
+                />
               ) : (
-                <img className="h-8 lg:h-10" src="/logo-colored.png" />
+                <img
+                  className="w-auto h-8 lg:h-10"
+                  src="/logo-colored.png"
+                  width="382"
+                  height="103"
+                  alt="شعار المجلة التقنية"
+                />
               )}
             </a>
           </Link>
           <button
-            aria-label="Toggle Dark Mode"
+            aria-label="تفعيل وتعطيل الوضع المظلم"
             type="button"
             className="p-2 bg-gray-200 rounded-md dark:hover:bg-gray-700 focus:ring-2 ring-gray-900 dark:ring-gray-200 dark:bg-gray-800 hover:bg-gray-300 focus:outline-none"
             onClick={() => {

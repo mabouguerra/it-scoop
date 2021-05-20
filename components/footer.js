@@ -12,7 +12,14 @@ export default function Footer() {
                 محتوى الموقع منشور تحت رخصة المشاع الإبداعي
               </span>
               <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">
-                <img src="/by-nc-sa.svg" className="h-2.5 sm:h-3 inline mr-2" />
+                <span className="sr-only">رخصة المشاع الإبداعي</span>
+                <img
+                  src="/by-nc-sa.svg"
+                  className="h-2.5 w-auto sm:h-3 inline mr-2"
+                  width="80"
+                  height="15"
+                  alt="رمز رخصة المشاع الإبداعي"
+                />
               </a>
               <p className="hidden lg:block">
                 يُمكنك استخدام محتويات المجلة التقنية بشرط ذكر اسم المؤلف
