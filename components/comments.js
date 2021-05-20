@@ -12,14 +12,16 @@ export default function Comments({ pid, url, title }) {
   };
   return (
     <div className="mt-24 ">
-      <button
-        className="mb-6 text-lg font-bold text-gray-800 focus:outline-none dark:text-gray-200 lg:text-2xl lg:py-6"
-        onClick={() => {
-          setDisplay(true);
-        }}
-      >
-        التعليقات ←
-      </button>
+      {!display && (
+        <button
+          className="mb-6 text-lg font-bold text-gray-800 focus:outline-none dark:text-gray-200 lg:text-2xl lg:py-6"
+          onClick={() => {
+            setDisplay(true);
+          }}
+        >
+          التعليقات ←
+        </button>
+      )}
       {display && (
         <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
       )}
