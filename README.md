@@ -1,4 +1,4 @@
-This project is a recreation of [it-scoop](https://www.it-scoop.com/) using [Next.js](https://nextjs.org/) that aims to improve performance and readability.
+This project is a recreation of [it-scoop.com](https://www.it-scoop.com/) using [Next.js](https://nextjs.org/) that aims to improve performance and readability.
 
 ## Getting Started
 
