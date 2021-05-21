@@ -2,7 +2,6 @@ import Container from "@/components/container";
 import Layout from "@/components/layout";
 import About from "@/components/about";
 import Head from "next/head";
-import Footer from "@/components/footer";
 
 export default function AboutPage() {
   return (

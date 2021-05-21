@@ -4,13 +4,12 @@ import Avatar from "./avatar";
 export default function PostHeader({ title, author, date }) {
   return (
     <div className="mt-8 sm:mt-16 lg:mt-24">
-      <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100 sm:text-3xl lg:text-4xl ">
+      <h1 className="text-4xl text-gray-900 font-cursive dark:text-gray-100 sm:text-5xl lg:text-6xl ">
         {title}
       </h1>
-      <div className="mt-4 text-sm font-medium text-gray-800 dark:text-gray-200 lg:text-base lg:mt-6 lg:mb-1">
-        {author}
-      </div>
-      <div className="mt-2 ">
+      <div className="flex items-center mt-4 text-xs text-gray-700 sm:mt-6 dark:text-gray-300 lg:text-sm lg:mt-8 ">
+        <Avatar author={author} />
+        <div className="mx-1 lg:mx-2">&#183;</div>
         <DateFormatter dateString={date} />
       </div>
     </div>

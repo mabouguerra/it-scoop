@@ -1,4 +1,3 @@
-const autoprefixer = require("autoprefixer");
 const colors = require("tailwindcss/colors");
 const plugin = require("tailwindcss/plugin");
 
@@ -17,6 +16,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ["Dubai", "sans-serif"],
+      cursive: ["Lalezar", "cursive"],
     },
     extend: {
       colors: {
@@ -136,7 +136,7 @@ module.exports = {
         },
         dark: {
           css: {
-            color: colors.gray[300],
+            color: colors.gray[200],
             a: {
               color: colors.red[400],
               "&:hover": {
