@@ -9,7 +9,7 @@ export default function PostHeader({ title, author, date }) {
       </h1>
       <div className="flex items-center mt-4 text-xs text-gray-700 sm:mt-6 dark:text-gray-300 lg:text-sm lg:mt-8 ">
         <Avatar author={author} />
-        <div className="mx-1 lg:mx-2">&#183;</div>
+        <div className="mx-2">&#183;</div>
         <DateFormatter dateString={date} />
       </div>
     </div>
