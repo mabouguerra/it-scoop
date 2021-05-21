@@ -19,13 +19,13 @@ export default function PostPreview({
         <div className="text-xs text-gray-700 dark:text-gray-300 lg:text-sm ">
           <DateFormatter dateString={date} />
         </div>
-        <h2 className="mt-2 text-2xl text-gray-900 font-cursive lg:mt-4 dark:text-gray-100 dark:hover:text-gray-300 hover:text-gray-700 sm:text-4xl lg:text-5xl ">
+        <h2 className="mt-2 text-2xl text-gray-900 font-cursive lg:mt-4 dark:text-gray-100 dark:hover:text-gray-300 hover:text-gray-700 sm:text-3xl lg:text-4xl ">
           <Link href={url}>
             <a>{title}</a>
           </Link>
         </h2>
         <div
-          className="mt-4 text-sm font-medium text-gray-700 dark:text-gray-200 sm:text-base lg:mt-8 line-clamp-3 sm:line-clamp-none"
+          className="mt-4 text-sm font-medium text-gray-700 dark:text-gray-200 sm:text-base lg:mt-6 line-clamp-3 sm:line-clamp-none"
           dangerouslySetInnerHTML={{ __html: excerpt }}
         ></div>
         <Link href={url}>
