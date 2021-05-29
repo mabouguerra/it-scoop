@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div className="mt-8 sm:mt-12 lg:mt-20">
-      <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100 lg:text-3xl">
+      <h1 className="text-3xl text-gray-900 font-cursive dark:text-gray-100 lg:text-4xl">
         عن المجلة التقنية
       </h1>
       <div className="mt-8 space-y-4 text-gray-700 dark:text-gray-300">
