@@ -22,7 +22,7 @@ export default function Post({ post }) {
           />
           <PostBody content={post.content} />
         </article>
-        <Comments url={post.url} pid={post.pid} title={post.title} />
+        // <Comments url={post.url} pid={post.pid} title={post.title} />
       </Container>
     </Layout>
   );
