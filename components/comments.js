@@ -22,9 +22,9 @@ export default function Comments({ pid, url, title }) {
           التعليقات ←
         </button>
       )}
-      {display && (
+      {/*display && (
         <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
-      )}
+      )*/}
     </div>
   );
 }
